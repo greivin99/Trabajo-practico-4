@@ -52,10 +52,10 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Build docker image
-        run: docker build -t greivin99/mlops_retraining:dev .
+        run: docker build -t greivin99/trabajo_practico_4 .
 
       - name: Docker push to Dockerhub
-        run: docker push greivin99/mlops_retraining:dev
+        run: docker push greivin99/trabajo_practico_4
 
 
       - name: Login into the server
@@ -74,5 +74,5 @@ jobs:
                     docker rm breast-cancer
                   fi
                   
-                  docker pull ${{ secrets.DOCKER_USERNAME }}/mlops_retraining:dev
-                  docker run -d --name breast-cancer -p 8000:8000 ${{ secrets.DOCKER_USERNAME }}/mlops_retraining:dev
+                  docker pull ${{ secrets.DOCKER_USERNAME }}/greivin99/trabajo_practico_4
+                  docker run -d --name breast-cancer -p 8000:8000 ${{ secrets.DOCKER_USERNAME }}/greivin99/trabajo_practico_4
