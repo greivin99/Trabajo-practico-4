@@ -1,0 +1,15 @@
+joblib
+kiwisolver
+matplotlib
+numpy
+packaging
+pandas
+pillow
+pyparsing
+python-dateutil
+pytz
+scikit-learn
+scipy
+fastapi
+uvicorn
+streamlit
