@@ -74,5 +74,5 @@ jobs:
                     docker rm breast-cancer
                   fi
                   
-                  docker pull ${{ secrets.DOCKER_USERNAME }}/greivin99/trabajo_practico_4
-                  docker run -d --name breast-cancer -p 8000:8000 ${{ secrets.DOCKER_USERNAME }}/greivin99/trabajo_practico_4
+                  docker pull greivin99/trabajo_practico_4
+                  docker run -d --name breast-cancer -p 8000:8000 greivin99/trabajo_practico_4
